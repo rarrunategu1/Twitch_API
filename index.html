@@ -2,11 +2,67 @@
 <html>
     <head>
         <title>Twitch API</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Amaranth:700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    </head>    
+    <style>
+    .container {
+        text-align: center;
+        width: 700px;
+        margin: 0 auto;
+    }
+    #title { 
+        font-weight: bold;
+        font-size: 40px;
+        background-color: grey;
+        color: white;
+        font-family: cursive;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        
+    }
+    
+    #all{
+        font-size: 20px;
+        background-color: pink;
+        
+    }
+    #offline {
+        font-size: 20px;
+        background-color: pink;
+    }
+    #online {
+        font-size: 20px;
+        background-color: pink;
+    }
+    
+    </style>
+    
+    
     </head>
     
     <body>
-        
-        
+        <div class="container">
+            <div id="title"><i class ="fa fa-twitch">Twitch Stream</i></div>
+            <div class="row">
+                <div class="btn-group btn-group-justified">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary" id ="all">All</button>
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary" id ="online">Online</button>
+                    </div> 
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-primary" id ="offline">Offline</button>
+                    </div>  
+                </div>
+            </div>
+            <div class="res"></div>
+        </div>
         <script src="app.js"></script>
     </body>
 </html>
